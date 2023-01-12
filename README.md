@@ -17,10 +17,12 @@ Our ISP, "FreeCash" is a Low-Frequency Trading AI, is a service designed to give
 ## GitHub Usernames and Porfolios
 
   - gnarayan1337
-  \nhttps://www.codermerlin.com/users/gautam-narayan/Digital%20Portfolio/CS-II/Projects/ISP/Journal.html
+
+  https://www.codermerlin.com/users/gautam-narayan/Digital%20Portfolio/CS-II/Projects/ISP/Journal.html
   
   - squaredcubed64
-  \nhttps://www.codermerlin.com/users/jakob-mcpherson/Digital%20Portfolio/index.html
+
+  https://www.codermerlin.com/users/jakob-mcpherson/Digital%20Portfolio/index.html
 
 
 
