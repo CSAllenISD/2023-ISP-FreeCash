@@ -14,7 +14,7 @@ Our ISP, "FreeCash" is a Low-Frequency Trading AI, is a service designed to give
   - Gautam Narayan
   - Jakob McPherson
 
-## GitHub Usernames and Porfolios
+## GitHub Usernames and Portfolios
 
   - gnarayan1337 | Project Manager, Software Engineer
 
