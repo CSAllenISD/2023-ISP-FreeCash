@@ -2,13 +2,13 @@
 
 ## Project Descripton:
 
-## Project Manager : 
+## Project Manager 
   - Gautam Narayan
 
-## Product Manager :
+## Product Manager
   - Jakob McPherson
 
-## Software Engineer : 
+## Software Engineer 
   - Gautam Narayan
   - Jakob McPherson
 
