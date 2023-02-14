@@ -1,4 +1,3 @@
-"""This file prints recent tweets with a certain stock ticker using Tweepy"""
 import tweepy
 
 #Enter Twitter API keys
