@@ -1,0 +1,61 @@
+/* Theme colors */
+
+:root {
+    --primary: #252525;
+    --secondary: #1a1a1a;
+    --tertiary: #121212;
+    --highlight: #434343;
+    --accent: #0077c2;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+.bg-tertiary {
+    background-color: var(--tertiary) !important;
+}
+
+.bg-highlight {
+    background-color: var(--highlight) !important;
+}
+
+.bg-accent {
+    background-color: var(--accent) !important;
+}
+
+nav {
+    background-color: var(--tertiary) !important;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar-collapse.show {
+    background-color: var(--tertiary) !important;
+    z-index: 100;
+    max-width: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav {
+    margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 56px;
+        right: -250px;
+        bottom: 0;
+        width: 250px;
+        padding-top: 15px;
+        background-color: #343a40;
+    }
+
+    .navbar-collapse.show {
+        transform: translateX(-250px);
+    }
+}
