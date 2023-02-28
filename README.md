@@ -28,6 +28,6 @@ Our ISP, "FreeCash" is a Low-Frequency Trading AI, is a service designed to give
 
   https://www.codermerlin.com/users/jakob-mcpherson/Digital%20Portfolio/index.html
 
-  - Boden-C | QA Engineer, Software engineer
+  - Boden-C |Head Front-End Developer, QA Engineer
   
   https://boden-c.github.io
