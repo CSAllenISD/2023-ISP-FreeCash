@@ -33,16 +33,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link text-white mx-4" href="#">This Is</a>
+                        <a class="nav-link text-white mx-4" href="#">Featured</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white mx-4" href="#">A MVP</a>
+                        <a class="nav-link text-white mx-4" href="#">Trending</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white mx-4" href="#">Created At</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white mx-4" href="#">3am</a>
+                        <a class="nav-link text-white mx-4" href="#">Risky</a>
                     </li>
                 </ul>
             </div>
@@ -69,7 +66,7 @@
         <!-- Featured -->
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 mb-2">
+                <div class="col-12 col-md-4 mb-2" id="featured">
                     <div class="card">
                         <div class="card-left">
                             <h2 class="card-title">Apple Inc</h2>
@@ -109,87 +106,16 @@
         </div>
 
         <!-- Columns -->
-        <div class="container mb-5 mt-5">
-            <div class="row text-white">
+        <div class="container container-fluid mb-5 mt-5">
+            <div class="row flex-grow-1 text-white">
                 <div class="col-md-6">
                     <h3>Trending</h3>
-                    <div class="card-list masked-overflow">
-                        <div class="card">
-                            <div class="card-left">
-                                <h2 class="card-title">Alphabet Inc</h2>
-                                <h5 class="card-subtitle">$GOOG</h5>
-                            </div>
-                            <div class="card-right">
-                                <h3 class="card-right-title">Buy</h3>
-                                <h5 class="card-right-subtitle">+5.94%</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-left">
-                                <h2 class="card-title">Alphabet Inc</h2>
-                                <h5 class="card-subtitle">$GOOG</h5>
-                            </div>
-                            <div class="card-right">    
-                                <h3 class="card-right-title">Buy</h3>
-                                <h5 class="card-right-subtitle">+5.94%</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-left">
-                                <h2 class="card-title">Alphabet Inc</h2>
-                                <h5 class="card-subtitle">$GOOG</h5>
-                            </div>
-                            <div class="card-right">    
-                                <h3 class="card-right-title">Buy</h3>
-                                <h5 class="card-right-subtitle">+5.94%</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-left">
-                                <h2 class="card-title">Alphabet Inc</h2>
-                                <h5 class="card-subtitle">$GOOG</h5>
-                            </div>
-                            <div class="card-right">    
-                                <h3 class="card-right-title">Buy</h3>
-                                <h5 class="card-right-subtitle">+5.94%</h5>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="card-list masked-overflow" id="trending"></div>
                 </div>
+
                 <div class="col-md-6">
-                    <h3>Risky Returns</h3>
-                    <div class="card-list masked-overflow">
-                        <div class="card">
-                            <div class="card-left">
-                                <h2 class="card-title">Alphabet Inc</h2>
-                                <h5 class="card-subtitle">$GOOG</h5>
-                            </div>
-                            <div class="card-right">
-                                <h3 class="card-right-title">Buy</h3>
-                                <h5 class="card-right-subtitle">+5.94%</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-left">
-                                <h2 class="card-title">Alphabet Inc</h2>
-                                <h5 class="card-subtitle">$GOOG</h5>
-                            </div>
-                            <div class="card-right">
-                                <h3 class="card-right-title">Buy</h3>
-                                <h5 class="card-right-subtitle">+5.94%</h5>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-left">
-                                <h2 class="card-title">Alphabet Inc</h2>
-                                <h5 class="card-subtitle">$GOOG</h5>
-                            </div>
-                            <div class="card-right">    
-                                <h3 class="card-right-title">Buy</h3>
-                                <h5 class="card-right-subtitle">+5.94%</h5>
-                            </div>
-                        </div>
-                    </div>
+                    <h3>Risky</h3>
+                    <div class="card-list masked-overflow" id="risky"></div>
                 </div>
             </div>
         </div>
