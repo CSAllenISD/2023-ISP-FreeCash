@@ -1,6 +1,8 @@
 """This file prints recent tweets with a certain stock ticker using Tweepy"""
 import tweepy
 
+#Number of Tweets to be pulled. Only 500,000 can be pulled per month.
+max_results = 10
 #Enter Twitter API keys
 BEARER_TOKEN = 'AAAAAAAAAAAAAAAAAAAAACK0lgEAAAAAwbhuEpAJPc%2FzvtA4GfgDVAQ0pM4%3'\
     'Dn8noDHkYdSq68Gb5w6K9vSHFIYPWIGwpYe5aW8YjqxBtWSIvCS'
@@ -19,5 +21,14 @@ client = tweepy.Client(
     access_token=ACCESS_TOKEN, access_token_secret=ACCESS_TOKEN_SECRET
 )
 
-public_tweets = client.search_recent_tweets("AAPL")
-print(public_tweets)
+public_tweets = client.search_recent_tweets(query = "AAPL", tweet_fields=['created_at'], max_results=max_results)
+print(type(public_tweets))
+tweets_list = public_tweets[0]
+print(type(tweets_list))
+for tweet in tweets_list:
+    print(tweet.text)
+    print(tweet.created_at)
+    print("-----------------------------------------------------------------------------")
+    
+#with open("foo.txt", "a") as f:
+ #    f.write("new line\n")
