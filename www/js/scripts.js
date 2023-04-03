@@ -24,4 +24,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
         navbarCollapse.classList.toggle("show");
     });
 
+    // Add stocks to featured section
+    arrayOfStocks[0].addToFeaturedIndex(0);
+    arrayOfStocks[1].addToFeaturedIndex(1);
+    arrayOfStocks[2].addToFeaturedIndex(2);
+
 });

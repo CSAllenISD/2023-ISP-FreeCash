@@ -42,7 +42,13 @@ class Stock {
 
     addToFeaturedIndex(index) {
         const featuredElement = document.getElementById('featured');
-        const nthChild = featuredElement.parentNode.children[index];
-        featuredElement.parentNode.replaceChild(this.createCard(), nthChild);
+        if (index > 2) { //guard clause
+            console.error('Error: Featured section is already full');
+            return;
+        }
+        const card = this.createCard();
+        const nthChild = featuredElement.children[index];
+        console.log(nthChild)
+        nthChild.replaceChild(card, nthChild.children[0]);
     }
 }
