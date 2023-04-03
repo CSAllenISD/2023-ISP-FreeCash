@@ -1,9 +1,25 @@
 class Stock {
+    isTrending = false;
+    isRisky = false;
+    isFeatured = false;
+
     constructor(title, ticker, suggestion, buy) {
         this.title = title;
         this.ticker = ticker;
         this.suggestion = suggestion;
         this.buy = buy;
+    }
+
+    setTrending(bool) {
+        this.isTrending = bool;
+    }
+
+    setRisky(bool) {
+        this.isRisky = bool;
+    }
+
+    setFeatured(bool) {
+        this.isFeatured = bool;
     }
 
     createCard() {
@@ -48,7 +64,6 @@ class Stock {
         }
         const card = this.createCard();
         const nthChild = featuredElement.children[index];
-        console.log(nthChild)
         nthChild.replaceChild(card, nthChild.children[0]);
     }
 }
