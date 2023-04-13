@@ -40,18 +40,12 @@ print(0)
 # Load the BERT encoder and preprocessing models
 preprocess = hub.load('https://tfhub.dev/tensorflow/bert_en_uncased_preprocess/3')
 
-print(.5)
-
-bert = hub.load('https://tfhub.dev/google/experts/bert/wiki_books/sst2/2')
-
 print(1)
 
 # Convert the sentences to bert inputs
-bert_inputs = preprocess(headlines[:1])
+bert_inputs = preprocess(headlines)
 
 print(2)
 
 # Feed the inputs to the model to get the pooled and sequence outputs
-bert_outputs = bert(bert_inputs, training=False)
-pooled_output = bert_outputs['pooled_output']
-sequence_output = bert_outputs['sequence_output']
+print(bert_inputs)
