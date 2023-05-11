@@ -76,7 +76,7 @@ seed = 42
 
 
 raw_train_ds = tf.keras.utils.text_dataset_from_directory(
-    'aclImdb/train',
+    'sentimentsAndHeadlines/train',
     batch_size=batch_size,
     validation_split=0.2,
     subset='training',
@@ -89,7 +89,7 @@ raw_train_ds = tf.keras.utils.text_dataset_from_directory(
     #print("Label", label_batch.numpy()[i])
    
 raw_val_ds = tf.keras.utils.text_dataset_from_directory(
-    'aclImdb/train',
+    'sentimentsAndHeadlines/train',
     batch_size=batch_size,
     validation_split=0.2,
     subset='validation',
