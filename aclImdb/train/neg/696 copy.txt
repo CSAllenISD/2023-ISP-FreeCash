@@ -1,0 +1,1 @@
+$AAPL short some 592.49

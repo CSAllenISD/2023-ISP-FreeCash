@@ -96,9 +96,9 @@ raw_val_ds = tf.keras.utils.text_dataset_from_directory(
     seed=seed)
 
 
-raw_test_ds = tf.keras.utils.text_dataset_from_directory(
-    'aclImdb/test',
-    batch_size=batch_size)
+#raw_test_ds = tf.keras.utils.text_dataset_from_directory(
+#    'aclImdb/test',
+#    batch_size=batch_size)
 
 
 def custom_standardization(input_data):
@@ -146,7 +146,7 @@ first_review, first_label = text_batch[0], label_batch[0]
 train_ds = raw_train_ds.map(vectorize_text)
 print(train_ds)
 val_ds = raw_val_ds.map(vectorize_text)
-test_ds = raw_test_ds.map(vectorize_text)
+#test_ds = raw_test_ds.map(vectorize_text)
 
 
 AUTOTUNE = tf.data.AUTOTUNE
@@ -157,7 +157,7 @@ AUTOTUNE = tf.data.AUTOTUNE
 #print(type(train_ds))
 train_ds = train_ds.cache().prefetch(buffer_size=AUTOTUNE)
 val_ds = val_ds.cache().prefetch(buffer_size=AUTOTUNE)
-test_ds = test_ds.cache().prefetch(buffer_size=AUTOTUNE)
+#test_ds = test_ds.cache().prefetch(buffer_size=AUTOTUNE)
 
 
 embedding_dim = 16

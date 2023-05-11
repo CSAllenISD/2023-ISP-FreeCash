@@ -1,0 +1,1 @@
+long $AAPL 107 calls @ .40

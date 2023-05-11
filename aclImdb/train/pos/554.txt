@@ -1,0 +1,1 @@
+ALERT: New MACD signal created on $CTXS - Buy at 77.09 - Time: 18:23 - Strength: 10. Powered by https://t.co/4TdgjEDLLZ

@@ -1,0 +1,1 @@
+expecting  $SPY to close above 205.20 $AAPL

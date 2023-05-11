@@ -1,0 +1,1 @@
+To ensure low operational cost for radio networks , the BTS modules can be configured , software upgraded and diagnosed remotely .
