@@ -1,0 +1,1 @@
+Metrics in QPR ScoreCard now support date , text and milestone-based values , which improve its support for managing projects around performance or process-related content .

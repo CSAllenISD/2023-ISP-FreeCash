@@ -1,0 +1,1 @@
+$CRK time to accumulate for a long position with far more upside than downside

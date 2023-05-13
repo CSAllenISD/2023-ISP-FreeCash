@@ -1,0 +1,1 @@
+Nokia will continue to invest in future development of Qt for the benefit of all users , both Commercial and LGPL .
