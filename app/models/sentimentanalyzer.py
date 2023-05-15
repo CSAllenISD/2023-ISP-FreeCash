@@ -13,6 +13,7 @@ data = read_csv("app\database\headlinesAndSentiments.csv")
 # converting csv column data to list
 headlines = data['Sentence'].to_list()
 sentiments = data['Sentiment'].to_list()
+# preprocessing csv data by converting string sentiments to integers
 sentimentIntegers = []
 for sentiment in sentiments:
   assert sentiment == "positive" or sentiment == "negative" or sentiment == "neutral"
@@ -103,31 +104,24 @@ model.compile(loss=losses.BinaryCrossentropy(from_logits=True),
               optimizer='adam',
               metrics=tf.metrics.BinaryAccuracy(threshold=0.0))
 
+# ckpt350 had the highest accuracy during training
 model.load_weights("app/models/ckpt350")
 
-#print("Loss: ", loss)
-#print("Accuracy: ", accuracy)
-
-
+# setup model for prediction
 export_model = tf.keras.Sequential([
   vectorize_layer,
   model,
   layers.Activation('sigmoid')
 ])
-
-
 export_model.compile(
     loss=losses.BinaryCrossentropy(from_logits=False), optimizer="adam", metrics=['accuracy']
 )
 
-# Test it with `raw_test_ds`, which yields raw strings
-#loss, accuracy = export_model.evaluate(raw_test_ds)
-#print(accuracy)
-    
+# use NN to predict sentiment as float
 examples = headlines
-
 predictions = export_model.predict(examples)
 
+# write predictions and actual sentiments to file
 f = open("train/predictions.txt", "a")
 for i in range(len(predictions)):
   f.write(str(predictions[i][0]) + ", " + str(sentimentIntegers[i]) + "\n")
