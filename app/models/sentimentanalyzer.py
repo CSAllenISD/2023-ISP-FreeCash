@@ -124,5 +124,5 @@ predictions = export_model.predict(examples)
 # write predictions and actual sentiments to file
 f = open("train/predictions.txt", "a")
 for i in range(len(predictions)):
-  f.write(str(predictions[i][0]) + ", " + str(sentimentIntegers[i]) + "\n")
+  f.write(str(predictions[i][0] * 2 - 1) + ", " + str(sentimentIntegers[i]) + "\n")
 f.close()
